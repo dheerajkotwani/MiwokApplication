@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#A5A039"
+        android:text="Numbers"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_margin="1dp"
+        />
+    <TextView
+        android:id="@+id/family"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#39A1A5"
+        android:text="Family"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_margin="1dp"
+        />
+    <TextView
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#9A39A5"
+        android:text="Colours"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_margin="1dp"
+        />
+    <TextView
+        android:id="@+id/phrases"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#62A539"
+        android:text="Phrases"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_margin="1dp"
+        />
+
+</LinearLayout>
