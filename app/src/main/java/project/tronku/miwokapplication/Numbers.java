@@ -4,10 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Numbers extends AppCompatActivity {
 
@@ -34,12 +37,10 @@ public class Numbers extends AppCompatActivity {
         words.add("Nine");
         words.add("Ten");
 
-        LinearLayout RootView = findViewById(R.id.RootView);
-        for (a = 0; a < 10; a++) {
-            TextView WordView = new TextView(this);
-            WordView.setText(words.get(a));
-            RootView.addView(WordView);
+        ArrayAdapter<String> itemsAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,words);
+        ListView listview=(ListView) findViewById(R.id.list);
+        listview.setAdapter(itemsAdapter);
         }
     }
 
-}
+
