@@ -28,7 +28,7 @@ public class Family extends AppCompatActivity {
         words.add("Ten");
 
         ArrayAdapter<String> itemsAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,words);
-        ListView listview=(ListView) findViewById(R.id.list);
+        ListView listview=(ListView) findViewById(R.id.family);
         listview.setAdapter(itemsAdapter);
     }
 }

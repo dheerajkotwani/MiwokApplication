@@ -28,7 +28,7 @@ public class Colours extends AppCompatActivity {
         words.add("Black");
 
         ArrayAdapter<String> itemsAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,words);
-        ListView listview=(ListView) findViewById(R.id.list);
+        ListView listview=(ListView) findViewById(R.id.colors);
         listview.setAdapter(itemsAdapter);
     }
 }
