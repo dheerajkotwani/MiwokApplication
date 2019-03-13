@@ -9,5 +9,22 @@ public class Family extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_family);
+
+        ArrayList<String> words = new ArrayList<String>();
+
+        words.add("One");
+        words.add("Two");
+        words.add("Three");
+        words.add("Four");
+        words.add("Five");
+        words.add("Six");
+        words.add("Seven");
+        words.add("Eight");
+        words.add("Nine");
+        words.add("Ten");
+
+        ArrayAdapter<String> itemsAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,words);
+        ListView listview=(ListView) findViewById(R.id.list);
+        listview.setAdapter(itemsAdapter);
     }
 }

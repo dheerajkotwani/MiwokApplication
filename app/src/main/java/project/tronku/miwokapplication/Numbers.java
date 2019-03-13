@@ -40,7 +40,7 @@ public class Numbers extends AppCompatActivity {
         ArrayAdapter<String> itemsAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,words);
         ListView listview=(ListView) findViewById(R.id.list);
         listview.setAdapter(itemsAdapter);
-        }
     }
+}
 
 
