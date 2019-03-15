@@ -24,22 +24,23 @@ public class Numbers extends AppCompatActivity {
 
         int a = 0;
 
-        ArrayList<String> words = new ArrayList<String>();
+        ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add("One");
-        words.add("Two");
-        words.add("Three");
-        words.add("Four");
-        words.add("Five");
-        words.add("Six");
-        words.add("Seven");
-        words.add("Eight");
-        words.add("Nine");
-        words.add("Ten");
+        words.add(new Word("One","ek"));
+        words.add(new Word("Two","do"));
+//        words.add("Three");
+//        words.add("Four");
+//        words.add("Five");
+//        words.add("Six");
+//        words.add("Seven");
+//        words.add("Eight");
+//        words.add("Nine");
+//        words.add("Ten");
 
-        ArrayAdapter<String> itemsAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,words);
-        ListView listview=(ListView) findViewById(R.id.list);
-        listview.setAdapter(itemsAdapter);
+        
+//        ArrayAdapter<Word> itemsAdapter=new ArrayAdapter<>(this,R.layout.list_layout,words);
+//        ListView listview=(ListView) findViewById(R.id.list);
+//        listview.setAdapter(itemsAdapter);
     }
 }
 
