@@ -22,7 +22,6 @@ public class Numbers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-        int a = 0;
 
         ArrayList<Word> words = new ArrayList<Word>();
 
@@ -37,10 +36,10 @@ public class Numbers extends AppCompatActivity {
 //        words.add("Nine");
 //        words.add("Ten");
 
-        
+        WordAdapter itemsAdapter=new WordAdapter(this, words);
 //        ArrayAdapter<Word> itemsAdapter=new ArrayAdapter<>(this,R.layout.list_layout,words);
-//        ListView listview=(ListView) findViewById(R.id.list);
-//        listview.setAdapter(itemsAdapter);
+        ListView listview=(ListView) findViewById(R.id.list);
+        listview.setAdapter(itemsAdapter);
     }
 }
 
