@@ -7,5 +7,28 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="number" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/number</item>
+        <item name="colorPrimaryDark">@color/number</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="family" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/family</item>
+        <item name="colorPrimaryDark">@color/family</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="color" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colors</item>
+        <item name="colorPrimaryDark">@color/colors</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="phrases" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/phrases</item>
+        <item name="colorPrimaryDark">@color/phrases</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 </resources>

@@ -9,16 +9,16 @@
     android:background="#abc"
     >
     <TextView
-        android:id="@+id/miwok_default_list"
+        android:id="@+id/english"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="one"
+
         />
     <TextView
-        android:id="@+id/miwok_list"
+        android:id="@+id/miwok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="lutti"
+
         />
 
 
