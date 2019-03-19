@@ -2,6 +2,7 @@ package project.tronku.miwokapplication;
 
 import android.app.Activity;
 import android.media.Image;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,13 +14,16 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word> {
-    
-    public WordAdapter(Activity context, ArrayList<Word> words) {
+
+    private int mColorResourceId;
+
+    public WordAdapter(Activity context, ArrayList<Word> words, int colorResourceId) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
         // going to use this second argument, so it can be any value. Here, we used 0.
         super(context, 0, words);
+        mColorResourceId = colorResourceId;
     }
 
 
@@ -34,8 +38,8 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         Word currentWord = getItem(position);
 
-        LinearLayout background = (LinearLayout) listItemView.findViewById(R.id.linear_layout_text);
-        background.setBackgroundColor(currentWord.getBackground());
+//        LinearLayout background = (LinearLayout) listItemView.findViewById(R.id.linear_layout_text);
+//        background.setBackgroundColor(currentWord.getBackground());
 
         ImageView image=(ImageView) listItemView.findViewById(R.id.list_image);
         if(currentWord.hasImage()){
@@ -50,6 +54,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         TextView miwok= (TextView) listItemView.findViewById(R.id.miwok);
         miwok.setText(currentWord.getMiwokTranslation());
+
+        View textContainer = listItemView.findViewById(R.id.list_layout);
+        int color = ContextCompat.getColor(getContext(),mColorResourceId);
+        textContainer.setBackgroundColor(color);
 
         return listItemView;
     }

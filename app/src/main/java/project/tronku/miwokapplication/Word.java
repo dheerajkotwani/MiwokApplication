@@ -8,9 +8,9 @@ public class Word {
     private String mMiwokTranslation;
 
 
-    public Word(String defaultTranslation, String miwokTranslation, Integer image, Integer backgroundColor){
+    public Word(String defaultTranslation, String miwokTranslation, Integer image){
         mImage = image;
-        TextLinearLayout = backgroundColor;
+//        TextLinearLayout = backgroundColor;
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
     }
@@ -23,7 +23,7 @@ public class Word {
     public Integer getImage(){
         return mImage;
     }
-    public Integer getBackground(){ return TextLinearLayout; }
+//    public Integer getBackground(){ return TextLinearLayout; }
     public boolean hasImage(){
         return mImage != NO_IMAGE_PROVIDED;
     }
