@@ -25,16 +25,16 @@ public class Numbers extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("One","lutti"));
-        words.add(new Word("Two","otiiko"));
-        words.add(new Word("Three","tolookosu"));
-        words.add(new Word("Four","oyyisa"));
-        words.add(new Word("Five","otiiko"));
-        words.add(new Word("Six","temmokka"));
-        words.add(new Word("Seven","kenekaku"));
-        words.add(new Word("Eight","kawinta"));
-        words.add(new Word("Nine","wo'e"));
-        words.add(new Word("Ten","na'aacha"));
+        words.add(new Word("One","lutti",R.drawable.number_one,R.color.number));
+        words.add(new Word("Two","otiiko",R.drawable.number_two,R.color.number));
+        words.add(new Word("Three","tolookosu",R.drawable.number_three,R.color.number));
+        words.add(new Word("Four","oyyisa",R.drawable.number_four,R.color.number));
+        words.add(new Word("Five","otiiko",R.drawable.number_five,R.color.number));
+        words.add(new Word("Six","temmokka",R.drawable.number_six,R.color.number));
+        words.add(new Word("Seven","kenekaku",R.drawable.number_seven,R.color.number));
+        words.add(new Word("Eight","kawinta",R.drawable.number_eight,R.color.number));
+        words.add(new Word("Nine","wo'e",R.drawable.number_nine,R.color.number));
+        words.add(new Word("Ten","na'aacha",R.drawable.number_ten,R.color.number));
 
         WordAdapter itemsAdapter=new WordAdapter(this, words);
 //        ArrayAdapter<Word> itemsAdapter=new ArrayAdapter<>(this,R.layout.list_layout,words);
