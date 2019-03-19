@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/numbers"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="88dp"
         android:background="@color/number"
         android:text="Numbers"
         android:textSize="30sp"
@@ -20,7 +20,7 @@
     <TextView
         android:id="@+id/family"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="88dp"
         android:background="@color/family"
         android:text="Family"
         android:textSize="30sp"
@@ -31,7 +31,7 @@
     <TextView
         android:id="@+id/colors"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="88dp"
         android:background="@color/colors"
         android:text="Colours"
         android:textSize="30sp"
@@ -42,7 +42,7 @@
     <TextView
         android:id="@+id/phrases"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="88dp"
         android:background="@color/phrases"
         android:text="Phrases"
         android:textSize="30sp"

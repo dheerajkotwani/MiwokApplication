@@ -12,7 +12,6 @@
         android:layout_width="88dp"
         android:layout_height="88dp"
         android:id="@+id/list_image"
-        android:layout_marginRight="16dp"
         android:background="#fff"
         />
     <LinearLayout
@@ -21,18 +20,22 @@
         android:orientation="vertical"
         android:padding="16dp"
         >
+        <TextView
+            android:id="@+id/miwok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            />
     <TextView
         android:id="@+id/english"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
         />
-    <TextView
-        android:id="@+id/miwok"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        />
     </LinearLayout>
 
 </LinearLayout>

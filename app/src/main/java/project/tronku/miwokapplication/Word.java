@@ -1,10 +1,12 @@
 package project.tronku.miwokapplication;
 
 public class Word {
-    private Integer mImage;
+    private static final int NO_IMAGE_PROVIDED = -1;
+    private Integer mImage = NO_IMAGE_PROVIDED;
     private Integer TextLinearLayout;
     private String mDefaultTranslation;
     private String mMiwokTranslation;
+
 
     public Word(String defaultTranslation, String miwokTranslation, Integer image, Integer backgroundColor){
         mImage = image;
@@ -22,6 +24,9 @@ public class Word {
         return mImage;
     }
     public Integer getBackground(){ return TextLinearLayout; }
+    public boolean hasImage(){
+        return mImage != NO_IMAGE_PROVIDED;
+    }
 
 }
 
