@@ -32,7 +32,7 @@ public class Numbers extends AppCompatActivity {
         words.add(new Word("Two","Otiiko",R.drawable.number_two,R.raw.number_two));
         words.add(new Word("Three","Tolookosu",R.drawable.number_three,R.raw.number_three));
         words.add(new Word("Four","Oyyisa",R.drawable.number_four,R.raw.number_four));
-        words.add(new Word("Five","massokka",R.drawable.number_five,R.raw.number_five));
+        words.add(new Word("Five","Massokka",R.drawable.number_five,R.raw.number_five));
         words.add(new Word("Six","Temmokka",R.drawable.number_six,R.raw.number_six));
         words.add(new Word("Seven","Kenekaku",R.drawable.number_seven,R.raw.number_seven));
         words.add(new Word("Eight","Kawinta",R.drawable.number_eight,R.raw.number_eight));
