@@ -13,7 +13,7 @@ public class Phrases extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phrases);
 
-        ArrayList<Word> words=new ArrayList<Word>();
+        ArrayList<Word> words= new ArrayList<>();
 
         words.add(new Word("Where are you going?","minto wuksus",-1));
         words.add(new Word("What is your name?","tinnә oyaase'nә",-1));
@@ -27,7 +27,8 @@ public class Phrases extends AppCompatActivity {
         words.add(new Word("Come here","әnni'nem",-1));
 
         WordAdapter itemAdapter= new WordAdapter(this, words, R.color.phrases);
-        ListView listView=(ListView) findViewById(R.id.list);
+        ListView listView;
+        listView = findViewById(R.id.list);
         listView.setAdapter(itemAdapter);
     }
 }
