@@ -6,19 +6,24 @@ public class Word {
     private Integer TextLinearLayout;
     private String mDefaultTranslation;
     private String mMiwokTranslation;
+    private Integer audio;
 
 
-    public Word(String defaultTranslation, String miwokTranslation, Integer image){
+    public Word(String defaultTranslation, String miwokTranslation, Integer image, Integer audioId){
         mImage = image;
 //        TextLinearLayout = backgroundColor;
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        audio = audioId;
     }
     public String getDefaultTranslation(){
         return mDefaultTranslation;
     }
     public String getMiwokTranslation(){
         return mMiwokTranslation;
+    }
+    public  Integer getAudio(){
+        return audio;
     }
     public Integer getImage(){
         return mImage;

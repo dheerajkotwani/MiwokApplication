@@ -2,6 +2,7 @@ package project.tronku.miwokapplication;
 
 import android.app.Activity;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,12 +11,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word> {
 
     private int mColorResourceId;
+    private MediaPlayer mediaPlayer;
 
     public WordAdapter(Activity context, ArrayList<Word> words, int colorResourceId) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
@@ -58,6 +61,18 @@ public class WordAdapter extends ArrayAdapter<Word> {
         View textContainer = listItemView.findViewById(R.id.list_layout);
         int color = ContextCompat.getColor(getContext(),mColorResourceId);
         textContainer.setBackgroundColor(color);
+
+
+
+//        listItemView.setOnClickListener(new View.OnClickListener(){
+//
+//            @Override
+//            public void onClick(View view) {
+//                mediaPlayer = (MediaPlayer) MediaPlayer.create(Numbers.this,Word.getAudio());
+//                mediaPlayer.start();
+//            }
+//        });
+
 
         return listItemView;
     }
